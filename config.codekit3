@@ -353,8 +353,8 @@
     "creationDate" : 649104598.99548197,
     "displayValue" : "found logo",
     "displayValueWasSetByUser" : 0,
-    "iconImageName" : "brackets-glace",
-    "iconImageWasSetByUser" : 0,
+    "iconImageName" : "brackets-slime",
+    "iconImageWasSetByUser" : 1,
     "lastBuiltDate" : 706746544.51382995
   },
   "projectSettings" : {
