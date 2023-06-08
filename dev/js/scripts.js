@@ -7,12 +7,14 @@ import { Physics2DPlugin } from "gsap/Physics2DPlugin";
 
 
 
+
+
 gsap.registerPlugin(MotionPathPlugin, DrawSVGPlugin, GSDevTools, Physics2DPlugin);
 
+gsap.to("#second-circle-left",{duration:3, rotation:520 });  
 
 
-
-let mainTL = GSAP.timeline();
-mainTL.add(outercircleAnimation()) ;
+let mainTL = gsap.timeline();
+//mainTL.add(blinkanim()) ;
 
 GSDevTools.create();
