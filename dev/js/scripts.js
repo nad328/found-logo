@@ -22,6 +22,17 @@ gsap.set("#third_circle_right", {transformOrigin:"center"})
 
 gsap.registerPlugin(MotionPathPlugin, DrawSVGPlugin, GSDevTools, Physics2DPlugin);
 
+
+function color(){
+    let tl = gsap.timeline();
+
+    tl.to("#owl", { backgroundColor: "#3c5350" })
+
+    return tl;
+
+}
+
+
 function flash(){
     let tl = gsap.timeline();
 
@@ -72,6 +83,8 @@ function rotating(){
 function blinkanim(){
     let tl = gsap.timeline();
 
+    
+
     tl.to("#inner_circle_left, #second_circle_left, #third_circle_left, #fourth_circle_left, #lines_1, #inner_circle_right, #second_circle_right, #third_circle_right, #fourth_circle_right, #lines_2" , {scaleY: 0 , duration: .2 , ease: 5})
     tl.to("#inner_circle_left, #second_circle_left, #third_circle_left, #fourth_circle_left, #lines_1, #inner_circle_right, #second_circle_right, #third_circle_right, #fourth_circle_right, #lines_2" , {pause:.25 , duration: .2 })
     tl.to("#inner_circle_left, #second_circle_left, #third_circle_left, #fourth_circle_left, #lines_1, #inner_circle_right, #second_circle_right, #third_circle_right, #fourth_circle_right, #lines_2" , {scaleY: 1 , duration: .2 , ease: 5})
@@ -86,10 +99,15 @@ function blinkanim(){
 
 
 let mainTL = gsap.timeline();
+
+mainTL.add(color()); 
+
 mainTL.add(flash());
 
 mainTL.add(rotating());
 
 mainTL.add(blinkanim());
+
+//mainTL.add(spin());
 
 GSDevTools.create();

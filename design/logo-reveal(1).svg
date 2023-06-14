@@ -1,5 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 669 534">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 725 534">
   <g id="owl">
+    <path id="Rectangle 1" fill="#3C5350" d="M0 0h725v534H0z"/>
     <circle id="outer_circle_left" cx="256" cy="217" r="119" fill="#2D3F43"/>
     <circle id="outer_circle_right" cx="449" cy="216" r="119" fill="#2D3F43"/>
     <circle id="second_circle_left" cx="256.5" cy="217.5" r="71.5" fill="#FF0"/>
