@@ -14,8 +14,8 @@ function draw(){
     let tl = gsap.timeline();
 
     tl.to("#right" , {scaleY: 0 , duration: 3})
-    tl.to("#left" , {scaleY: 0 , duration: 3})
-    tl.to("#bottom" , {scaleY: 0 , duration: 3})
+    tl.to("#left" , {scaleY: 0 , duration: 3} '-=2')
+    tl.to("#bottom" , {scaleY: 0 , duration: 3} '-=1')
 
 
 
