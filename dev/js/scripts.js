@@ -21,4 +21,6 @@ function color(){
 
 let mainTL = gsap.timeline();
 
+mainTL.add(color());
+
 GSDevTools.create();
