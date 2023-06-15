@@ -5,9 +5,10 @@ import { GSDevTools } from "gsap/GSDevTools";
 import { Physics2DPlugin } from "gsap/Physics2DPlugin";
 
 
+gsap.registerPlugin(MotionPathPlugin, DrawSVGPlugin, GSDevTools, Physics2DPlugin);
 
 
-let mainTL = gsap.timeline();
+
 
 function color(){
     let tl = gsap.timeline();
@@ -18,5 +19,6 @@ function color(){
 
 }
 
+let mainTL = gsap.timeline();
 
 GSDevTools.create();
