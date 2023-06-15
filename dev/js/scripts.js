@@ -13,7 +13,11 @@ gsap.registerPlugin(MotionPathPlugin, DrawSVGPlugin, GSDevTools, Physics2DPlugin
 function draw(){
     let tl = gsap.timeline();
 
-    tl.fromTo("eyeball", 3, {drawSVG:"50% 50%"}, {drawSVG:"100% 0%"});
+    tl.to("#right" , {scaleY: 0 , duration: 3})
+    tl.to("#left" , {scaleY: 0 , duration: 3})
+    tl.to("#bottom" , {scaleY: 0 , duration: 3})
+
+
 
     return tl;
 
