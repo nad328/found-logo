@@ -10,10 +10,10 @@ gsap.registerPlugin(MotionPathPlugin, DrawSVGPlugin, GSDevTools, Physics2DPlugin
 
 
 
-function color(){
+function draw(){
     let tl = gsap.timeline();
 
-    tl.to("#owl", { backgroundColor: "#3c5350" })
+    tl.fromTo("eyeball", 3, {drawSVG:"50% 50%"}, {drawSVG:"100% 0%"});
 
     return tl;
 
@@ -21,6 +21,6 @@ function color(){
 
 let mainTL = gsap.timeline();
 
-mainTL.add(color());
+mainTL.add(draw());
 
 GSDevTools.create();
